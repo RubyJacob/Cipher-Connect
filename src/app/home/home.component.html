@@ -1,0 +1,61 @@
+<div class="container">
+  <div class="chat-list mat-elevation-z5">
+    <div class="search-input">
+      <mat-form-field>
+        <input
+          matInput
+          placeholder="Search for users and start a chat"
+  
+        />
+      </mat-form-field>
+      <mat-autocomplete #users="matAutocomplete">
+        <mat-option>
+        </mat-option>
+      </mat-autocomplete>
+    </div>
+    <mat-selection-list [multiple]="false" >
+      <mat-divider></mat-divider>
+      <mat-list-option >
+        <p mat-line class="chat-title">
+          <span class="chat-name"></span
+          ><span class="chat-date"></span>
+        </p>
+        <p mat-line></p>
+        <mat-divider></mat-divider>
+      </mat-list-option>
+    </mat-selection-list>
+  </div>
+  <div class="messages mat-elevation-z5">
+    <div
+      class="messages-header"
+      >
+    </div>
+    <ng-template #noChatSelected>
+      <h2>Messages</h2>
+    </ng-template>
+    <mat-divider></mat-divider>
+    <div class="chat-area">
+          <div
+            class="chat-bubble-container"
+          >
+            <div class="chat-bubble">
+              <span class="chat-time">
+              </span>
+            </div>
+          </div>
+      <div #endOfChat></div>
+    </div>
+    <div class="input-area">
+      <mat-form-field appearance="outline">
+        <input
+          matInput
+          placeholder="Enter your message..."
+
+        />
+        <button >
+          <mat-icon>send</mat-icon>
+        </button>
+      </mat-form-field>
+    </div>
+  </div>
+</div>
