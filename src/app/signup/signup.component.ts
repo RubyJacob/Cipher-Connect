@@ -10,6 +10,7 @@ import { MatError, MatFormField, MatLabel } from '@angular/material/form-field';
   styleUrl: './signup.component.css'
 })
 export class SignupComponent {
+  form!: FormGroup<any>;
   
 
 }

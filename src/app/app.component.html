@@ -1,1 +1,17 @@
-<router-outlet></router-outlet>
+
+<mat-nav-list class="tool" color="primary">
+    <span><h2 class="head" style="color: white;">CIPHER CONNECT</h2></span>
+    
+    <ng-container >
+      <button >Sign Out</button>
+    </ng-container>
+</mat-nav-list>
+  
+  <main class="content mat-app-background">
+    <router-outlet></router-outlet>
+  </main>
+  
+  <ng-template #authButtons>
+    <a routerLink="/signin" routerLinkActive="active" mat-button>Signin</a>
+    <a routerLink="/signup" routerLinkActive="active" mat-button>Signup</a>
+  </ng-template>

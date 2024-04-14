@@ -1,17 +1,16 @@
 .header-spacer {
     flex: 1 1 auto;
   }
- 
+  
   .content {
     min-height: calc(100vh - 64px);
     padding: 25px 15px;
     box-sizing: border-box;
   }
   
-  
+  .active {
     border: 1px solid white;
-  
+  }
   .tool{
       background-color: #512da8;
-      height: 10%;
   }  
